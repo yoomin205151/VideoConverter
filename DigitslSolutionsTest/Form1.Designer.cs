@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            btn_agregar = new Button();
-            btn_salir = new Button();
+            btn_add = new Button();
+            btn_exit = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -46,35 +46,35 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
-            // btn_agregar
+            // btn_add
             // 
-            btn_agregar.Location = new Point(20, 623);
-            btn_agregar.Margin = new Padding(3, 4, 3, 4);
-            btn_agregar.Name = "btn_agregar";
-            btn_agregar.Size = new Size(134, 65);
-            btn_agregar.TabIndex = 1;
-            btn_agregar.Text = "ANALIZAR";
-            btn_agregar.UseVisualStyleBackColor = true;
-            btn_agregar.Click += btn_agregar_Click;
+            btn_add.Location = new Point(20, 623);
+            btn_add.Margin = new Padding(3, 4, 3, 4);
+            btn_add.Name = "btn_add";
+            btn_add.Size = new Size(134, 65);
+            btn_add.TabIndex = 1;
+            btn_add.Text = "ANALIZAR";
+            btn_add.UseVisualStyleBackColor = true;
+            btn_add.Click += btn_add_Click;
             // 
-            // btn_salir
+            // btn_exit
             // 
-            btn_salir.Location = new Point(456, 623);
-            btn_salir.Margin = new Padding(3, 4, 3, 4);
-            btn_salir.Name = "btn_salir";
-            btn_salir.Size = new Size(134, 65);
-            btn_salir.TabIndex = 2;
-            btn_salir.Text = "SALIR";
-            btn_salir.UseVisualStyleBackColor = true;
-            btn_salir.Click += btn_salir_Click;
+            btn_exit.Location = new Point(456, 623);
+            btn_exit.Margin = new Padding(3, 4, 3, 4);
+            btn_exit.Name = "btn_exit";
+            btn_exit.Size = new Size(134, 65);
+            btn_exit.TabIndex = 2;
+            btn_exit.Text = "SALIR";
+            btn_exit.UseVisualStyleBackColor = true;
+            btn_exit.Click += btn_exit_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(614, 716);
-            Controls.Add(btn_salir);
-            Controls.Add(btn_agregar);
+            Controls.Add(btn_exit);
+            Controls.Add(btn_add);
             Controls.Add(pictureBox1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
@@ -87,7 +87,7 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Button btn_agregar;
-        private Button btn_salir;
+        private Button btn_add;
+        private Button btn_exit;
     }
 }
